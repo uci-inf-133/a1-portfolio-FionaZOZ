@@ -2,23 +2,188 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Fiona Zou
+EMAIL: xixianz1@uci.edu
 -->
 
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiona Zou - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><span>Fiona</span>Zou</div>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1>Fiona Zou</h1>
+            <p class="hero-description">Full-Stack Developer & Computer Science Student passionate about creating elegant digital experiences and solving complex problems.</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn-primary">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-circle">
+                <img src="images/profile.jpeg" alt="Fiona Zou headshot">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- What I Do Section -->
+        <section>
+            <h2 class="section-title">What I Do</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Education & Tutoring</h3>
+                    <p>English teaching, personalized learning, content marketing, curriculum design</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Design</h3>
+                    <p>Interactive storytelling, UI/UX design, logic programming, system design</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Design</h3>
+                    <p>Visual storytelling, animation, illustration, interactive exhibit design</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <p>Python programming, web development, problem solving, system design</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section>
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <a href="projects.html" class="view-all">
+                    View All <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-1.png" alt="Garden Simulation Game screenshot showing plant growing mechanics">
+                    </div>
+                    <div class="project-content">
+                        <h3>Garden Simulation Game</h3>
+                        <p>Award-winning casual game with plant growing, cooking, and trading systems. 🏆 1st Place Newcomer Award.</p>
+                        <div class="project-tags">
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Logic Programming</span>
+                        </div>
+                        <a href="https://docs.google.com/document/d/1zxPAoXs7N8Re05v_kcky8rMHeXnIOeytzvG6eC4WXuM/edit?usp=sharing" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Details
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-2.png" alt="Slam poem animation showing creative storytelling">
+                    </div>
+                    <div class="project-content">
+                        <h3>Slam Poem Animation</h3>
+                        <p>Self-written poem turned into an animated video with original voice acting.</p>
+                        <div class="project-tags">
+                            <span class="tag">Creative Writing</span>
+                            <span class="tag">Animation</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/141TYazh_eVZooowCCykbP6apCernb8E6/view?usp=sharing" class="project-link">
+                            <i class="fas fa-play"></i> Watch Video
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-3.png" alt="Interactive presentation about design elements">
+                    </div>
+                    <div class="project-content">
+                        <h3>Interactive Presentation: Elements of a Good Design</h3>
+                        <p>A game-like interactive slideshow with clickable menus, mini-games, and animations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Interactive Design</span>
+                            <span class="tag">PowerPoint</span>
+                        </div>
+                        <a href="https://docs.google.com/presentation/d/1egLEASbH3VePoIR0pz_FglkWhK3RhHiWJWSqddEgGJU/edit?usp=sharing" class="project-link">
+                            <i class="fas fa-eye"></i> View Presentation
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><span>Fiona</span>Zou</h3>
+                <p>Full-Stack Developer passionate about creating elegant digital experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/fiona-zou-62b15438a" target="_blank" aria-label="LinkedIn profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:xixianz1@uci.edu" aria-label="Send email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fiona Zou. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

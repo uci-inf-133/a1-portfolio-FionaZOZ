@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Fiona Zou</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 修复项目页面图片过大的问题 */
+        .project-detail-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            align-items: center;
+        }
+
+        .project-detail-image {
+            width: 100%;
+            height: 450px;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .project-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 968px) {
+            .project-detail-content {
+                grid-template-columns: 1fr;
+            }
+
+            .project-detail-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><span>Fiona</span>Zou</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header white">
+        <h1>My Projects</h1>
+        <p>Here's a collection of creative projects I've worked on, including game design, animation, and interactive media. Each project represents a unique challenge and a chance to express my ideas.</p>
+    </header>
+
+    <div class="container">
+        <!-- Project 1: Garden Simulation Game -->
+        <article class="project-section">
+            <div class="project-detail-content">
+                <div class="project-detail-image">
+                    <img src="images/project-1.png" alt="Garden simulation game interface showing plant growing system with pots and menu">
+                </div>
+                <div class="project-info">
+                    <div class="project-badge">
+                        <i class="fas fa-trophy"></i>
+                        1st Place Newcomer Award
+                    </div>
+                    <h2>Garden Simulation Game</h2>
+                    <p>A cozy garden simulation game developed collaboratively with a team. I was responsible for all programming using a visual logic-based game maker. The game features a comprehensive plant growing system with weather and day/night cycles, a cooking system with 50 ingredients and 90 recipes, warehouse management, a gacha card system, maritime trading, mini-games, and more. Won 1st place in the platform's Newcomer Award.</p>
+                    <div class="project-tags">
+                        <span class="tag">Game Design</span>
+                        <span class="tag">Logic Programming</span>
+                        <span class="tag">System Design</span>
+                        <span class="tag">Team Collaboration</span>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1zxPAoXs7N8Re05v_kcky8rMHeXnIOeytzvG6eC4WXuM/edit?usp=sharing" class="project-button" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Project Documentation
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2: Slam Poem Animation -->
+        <article class="project-section">
+            <div class="project-detail-content reverse">
+                <div class="project-detail-image">
+                    <img src="images/project-2.png" alt="Hand-drawn animation frame showing character with text How I Struggle on Homework">
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Creative Project</div>
+                    <h2>Slam Poem Animation: "How I Struggle on Homework"</h2>
+                    <p>A creative multimedia project combining poetry, illustration, and voice acting. I wrote this slam poem for my Creative Writing class, where we were required to perform our poems in front of the class. As an introvert, I decided to create an animated video instead—letting it perform for me! I hand-drew all the animation frames and recorded my own voice-over. The video explores the universal student experience of struggling with homework through a blend of humor and relatability.</p>
+                    <div class="project-tags">
+                        <span class="tag">Creative Writing</span>
+                        <span class="tag">Animation</span>
+                        <span class="tag">Voice Acting</span>
+                        <span class="tag">Illustration</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/141TYazh_eVZooowCCykbP6apCernb8E6/view?usp=sharing" class="project-button" target="_blank">
+                        <i class="fas fa-play"></i>
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 3: Interactive Presentation -->
+        <article class="project-section">
+            <div class="project-detail-content">
+                <div class="project-detail-image">
+                    <img src="images/project-3.png" alt="Interactive presentation start screen with hand-drawn title Elements of a Good Design">
+                </div>
+                <div class="project-info">
+                    <h2>Interactive Presentation: Elements of a Good Design</h2>
+                    <p>A creative English assignment transformed into a fully interactive, game-like slideshow. I designed it with clickable navigation menus, embedded mini-games, and custom animations to make learning about design principles engaging. Originally featured voice-overs, background music, and click sound effects— unfortunately, after graduating and losing access to my school account, the audio features are no longer available due to permission restrictions, but the interactive experience can still be viewed.</p>
+                    <div class="project-tags">
+                        <span class="tag">Interactive Design</span>
+                        <span class="tag">PowerPoint</span>
+                        <span class="tag">Animation</span>
+                        <span class="tag">Game Mechanics</span>
+                    </div>
+                    <a href="https://docs.google.com/presentation/d/1egLEASbH3VePoIR0pz_FglkWhK3RhHiWJWSqddEgGJU/edit?usp=sharing" class="project-button" target="_blank">
+                        <i class="fas fa-eye"></i>
+                        View Presentation
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><span>Fiona</span>Zou</h3>
+                <p>Full-Stack Developer passionate about creating elegant digital experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/fiona-zou-62b15438a" target="_blank" aria-label="LinkedIn profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:xixianz1@uci.edu" aria-label="Send email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fiona Zou. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
